@@ -1,0 +1,17 @@
+! Title: Bloqueio geral de apostas, cassinos e jogos de azar
+! Description: Dominios de apostas esportivas, cassinos e jogos de azar online identificados em fonte publica.
+! Scope: bloquear independentemente de autorizacao, registro ou pais de operacao.
+! Source: VerificaBet Radar https://verificabet.com.br/pt-br/radar
+! Last reviewed: 2026-11-18
+! Entries are domain-level candidates. Recheck source and test before production rollout.
+
+||bbgbetbr.com^
+||4games.bet^
+||27e77.com^
+||5536an.com^
+||zalo999.bet^
+||spinanzia-casino.com^
+||buggy888-bet1.com^
+||phbet.world^
+||2jhbet.com^
+||jjjbetv.com^
