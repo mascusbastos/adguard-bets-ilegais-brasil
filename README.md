@@ -14,11 +14,11 @@ Para uma cobertura mais ampla, adicione as duas URLs abaixo em **Filtros → Lis
 
 É uma lista de terceiros dedicada a domínios de gambling, mantida pelo projeto HaGeZi. Ela é atualizada pelo mantenedor; a disponibilidade e o conteúdo dependem desse projeto. Como é uma lista ampla, pode haver falsos positivos. Consulte o projeto e reporte problemas ao mantenedor.
 
-### 2. Complemento focado no Radar brasileiro
+### 2. Lista publicada neste repositório — HaGeZi Gambling Mini + complemento brasileiro
 
 `https://raw.githubusercontent.com/mascusbastos/adguard-bets-ilegais-brasil/main/filters/apostas-cassinos-jogos-azar.txt`
 
-Contém domínios adicionais observados no Radar VerificaBet. Não é uma lista completa do Radar nem uma lista oficial do governo.
+Em 18/11/2026, o arquivo contém **50.638 regras de domínio**: uma cópia da lista HaGeZi Gambling Mini (50.628 regras na versão incorporada) mais 10 domínios complementares observados no Radar VerificaBet. É uma fotografia da versão incorporada no momento do commit; não se sincroniza automaticamente com o HaGeZi. Para atualizações contínuas da lista principal, mantenha também a URL oficial HaGeZi acima. O complemento brasileiro não é uma lista completa do Radar nem uma lista oficial do governo.
 
 Depois de adicionar as duas listas, salve e atualize os filtros. Não é necessário copiar o conteúdo de uma lista para dentro da outra.
 
