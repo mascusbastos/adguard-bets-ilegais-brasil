@@ -1,42 +1,33 @@
-# AdGuard – Apostas ilegais e sites suspeitos no Brasil
+# Bloqueio geral de apostas, cassinos e jogos de azar — Brasil
 
-Projeto comunitário para manter uma lista revisada de domínios relacionados a plataformas de apostas ilegais ou identificadas por fontes públicas como potencialmente fraudulentas, para uso no AdGuard Home.
+Projeto comunitário de lista DNS para AdGuard Home. O objetivo é bloquear sites de **apostas esportivas, cassinos online, slots e outros jogos de azar online**, independentemente de serem autorizados, registrados ou operarem no Brasil ou no exterior.
 
-> **Atenção:** esta lista não é uma decisão judicial nem uma garantia de que um domínio seja ilegal. Classificações como “potencial golpe” indicam risco reportado pela fonte consultada e precisam de revisão. A lista não representa todos os sites ilegais existentes.
+**Fora do escopo:** loterias oficiais tradicionais (Mega-Sena, Quina, Lotofácil etc.) e jogos sem aposta monetária.
 
-## Como usar no AdGuard Home
+## Lista para AdGuard Home
 
-1. Acesse **Filtros → Listas de bloqueio de DNS → Adicionar lista de bloqueio**.
-2. Informe a URL bruta do arquivo de lista quando ele estiver publicado neste repositório.
-3. Salve e atualize as listas.
+Adicione esta URL em **Filtros → Listas de bloqueio de DNS → Adicionar lista personalizada**:
 
-O arquivo de filtros seguirá o formato DNS do AdGuard, por exemplo:
+`https://raw.githubusercontent.com/mascusbastos/adguard-bets-ilegais-brasil/main/filters/apostas-cassinos-jogos-azar.txt`
 
-```
-||dominio-confirmado.example^
-```
+Depois salve e atualize as listas.
 
-O exemplo acima é apenas ilustrativo e **não é um domínio recomendado para bloqueio**.
+## O que a lista bloqueia
 
-## Critérios de inclusão
+- Casas de apostas esportivas.
+- Cassinos online, slots e jogos de azar com dinheiro.
+- Domínios identificados em fontes públicas, sem distinção entre autorizados e não autorizados.
 
-- Priorizar domínios identificados por fontes públicas confiáveis e verificáveis.
-- Registrar a fonte e a data da verificação.
-- Incluir somente domínios específicos; não bloquear TLDs inteiros.
-- Não incluir domínios apenas por conterem palavras como “bet”, “aposta” ou semelhantes.
-- Revisar possíveis falsos positivos e remover entradas sem sustentação.
+## Importante
 
-## Fontes de referência
+A lista inicial é parcial e não garante cobertura total. Domínios mudam frequentemente. DNS bloqueia nomes de domínio, mas pode ser contornado por VPN, proxy, DNS externo ou DNS-over-HTTPS. Em redes gerenciadas, considere restringir DNS externo e DoH para que os dispositivos usem o AdGuard Home.
 
-- [VerificaBet – Radar](https://verificabet.com.br/pt-br/radar)
-- [VerificaBet – Relatórios do Radar](https://verificabet.com.br/pt-br/relatorios/radar-semanal)
+Não usamos bloqueio indiscriminado de palavras como `bet` ou `casino` em qualquer domínio, nem bloqueamos TLDs inteiros, pois isso poderia atingir sites legítimos sem relação com apostas.
 
-A disponibilidade, metodologia e estrutura dessas páginas devem ser verificadas antes de qualquer coleta automatizada. Até que exista uma fonte estruturada e um processo de validação testado, as entradas devem ser revisadas manualmente.
+## Fontes e critérios
 
-## Estado atual
-
-O repositório está em fase inicial. Nenhum domínio deve ser considerado confirmado apenas por este README; a lista só deverá ser publicada após verificação individual das entradas.
+Consulte [sources/fontes-e-criterios.md](sources/fontes-e-criterios.md) para fontes, critérios de inclusão, limitações e data de revisão.
 
 ## Aviso
 
-O bloqueio DNS pode afetar o acesso a sites legítimos em caso de classificação incorreta. Mantenha uma cópia da configuração anterior, monitore relatos de falsos positivos e use este projeto por sua conta e risco.
+Este é um projeto independente, não uma lista oficial de bloqueio do governo. Teste em ambiente controlado e mantenha um procedimento para liberar domínios incorretamente classificados.
